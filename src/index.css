@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.searchBar {
+  width: 530px;
+  padding: 5px;
+}
+.slider__image {
+  position: relative;
+}
+.text_description {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
