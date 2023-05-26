@@ -1,5 +1,5 @@
 import React from "react";
-
+import Cards from "./Cards";
 function SmartPhones() {
   return (
     <div className="w-4/5 m-auto">
@@ -7,6 +7,9 @@ function SmartPhones() {
         Grab the best deal on{" "}
         <span className="text-[#008ECC]">smartPhones</span>
       </h1>
+      <div className="">
+        <Cards />
+      </div>
     </div>
   );
 }

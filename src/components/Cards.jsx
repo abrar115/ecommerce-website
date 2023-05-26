@@ -25,10 +25,11 @@ function Cards() {
       name: "Samsung S23",
     },
   ];
+
   return (
     <div>
       {phones.map((x) => (
-        <Card key={x._id} data={x} />
+        <Card key={x._id} datas={x} />
       ))}
     </div>
   );
