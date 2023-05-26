@@ -3,8 +3,8 @@ import React from "react";
 function Card({ datas }) {
   const { name, _id, price, image } = datas;
   return (
-    <div className="">
-      <div className="mb-4 rounded overflow-hidden border-2 border-[#EDEDED]  grid sm:grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-4 xl:grid-cols-4">
+    <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-4 xl:grid-cols-4">
+      <div className="mb-4 rounded overflow-hidden border-2 border-[#EDEDED]  ">
         <div className="">
           <img src={image} className=" h-[200]" alt={name} />
         </div>
