@@ -27,7 +27,7 @@ function Subheader() {
       </div>
       <div className="">
         <div className="flex items-center">
-          <span>Sign In/SignUp</span>
+          <span className=" ">SignIn/SignUp</span>
           <div className="flex items-center mx-2 border-gray-400 border-l-2 pl-2">
             <BsCart2 size={20} color="#008ECC" />
             <span>Cart</span>
