@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Card({ datas }) {
   const { name, _id, price, image } = datas;
   return (
-    <Link to="/">
+    <Link to={`/product-details/${_id}`}>
       <div className="mb-4 rounded overflow-hidden border-2  text-center items-center p-4 border-[#EDEDED]  cursor-pointer">
         <div className="">
           <img src={image} className=" h-[200px] w-full" alt={name} />

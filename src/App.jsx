@@ -1,13 +1,15 @@
 import React from "react";
-import Header from "./components/Header";
-import SliderComponent from "./components/herosection/SliderComponent";
 import Home from "./components/Home";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductDetail from "./components/ProductDetail";
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/product-details/:id" element={<ProductDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
