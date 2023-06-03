@@ -13,3 +13,8 @@
   top: 200px;
   right: 50px;
 }
+/* discount */
+.discount {
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
