@@ -3,6 +3,9 @@ import Header from "./Header";
 import SliderComponent from "./herosection/SliderComponent";
 import SmartPhones from "./SmartPhones";
 import Categories from "./Categories";
+import ElectronicBrand from "./ElectronicBrand";
+import DailyEssential from "./DailyEssential";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -13,6 +16,9 @@ function Home() {
       </div>
       <SmartPhones />
       <Categories />
+      <ElectronicBrand />
+      <DailyEssential />
+      <Footer />
     </div>
   );
 }

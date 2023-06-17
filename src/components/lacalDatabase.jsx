@@ -8,6 +8,16 @@ import furniture from "../assets/catogories/furniture.jpg";
 import cosmetic from "../assets/catogories/cosmetic.png";
 import decor from "../assets/catogories/decor.jpg";
 import accessories from "../assets/catogories/accessories.jpg";
+import electronique1 from "../assets/top-electronique/electronique (1).png";
+import electronique2 from "../assets/top-electronique/electronique (2).png";
+import electronique3 from "../assets/top-electronique/electronique (3).png";
+// daily essentials
+import dailyEssential from "../assets/dailessentials/dailyEssential.webp";
+import vegetable from "../assets/dailessentials/vegetables1.png";
+import fruits from "../assets/dailessentials/fruits.png";
+import strawberry from "../assets/dailessentials/png-transparent-strawberry-fruit-strawberry-strawberry-clipart-thumbnail.png";
+import mango from "../assets/dailessentials/mango-diy-skin-care-hacks-for-mangoes-mangoes-for-your-skin-2.png";
+import cherry from "../assets/dailessentials/cherry.jpeg";
 
 export const phones = [
   {
@@ -83,5 +93,53 @@ export const categories = [
     name: "Accessories",
     _id: "098jckckncncvv344",
     image: accessories,
+  },
+];
+
+export const TopbrandsElectroniques = [
+  {
+    _id: "098jcknc",
+    image: electronique1,
+  },
+  {
+    _id: "098jckdsnc",
+    image: electronique2,
+  },
+  {
+    _id: "098jszdcknc",
+    image: electronique3,
+  },
+];
+
+export const DailyEssentials = [
+  {
+    _id: "DEFGR455GGj343",
+    image: dailyEssential,
+    title: "Daily Essentials",
+  },
+  {
+    _id: "DEFGR4dzde55GGj343",
+    image: vegetable,
+    title: "Vegetables",
+  },
+  {
+    _id: "DEFGR45xqxsxs5GGj343",
+    image: fruits,
+    title: "Fruits",
+  },
+  {
+    _id: "DEFGR455GdkozzmkGj343",
+    image: strawberry,
+    title: "Strawberry",
+  },
+  {
+    _id: "DEFGR45plm5GGj343",
+    image: mango,
+    title: "Mango",
+  },
+  {
+    _id: "DEFGR455GddeoziodGj343",
+    image: cherry,
+    title: "Cherry",
   },
 ];
