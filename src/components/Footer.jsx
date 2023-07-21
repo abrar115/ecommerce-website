@@ -5,7 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { MdCall } from "react-icons/md";
 function Footer() {
   return (
-    <div className="bg-[#008ECC] py-8">
+    <div className="bg-[#008ECC] py-8 relative overflow-hidden">
       <div className="w-4/5 m-auto grid sm:grid-cols-1 md:grid-cols-3 gap-4">
         <div className="">
           <h1 className="font-bold text-white">AliExpress</h1>
@@ -77,6 +77,11 @@ function Footer() {
             <li className="my-4 text-white">Cancellation & Return Policy</li>
           </ul>
         </div> 
+      </div>
+      <div className="absolute  top-0  right-0 md:top-[-50px] md:right-[-50px]">
+        <div className="border-[1px] border-[#05ABF3] rounded-full p-2">
+          <div className="bg-[#05ABF3] p-16 md:p-32 rounded-full" />
+        </div>
       </div>
       {/* copyright */}
       <div className="w-4/5 m-auto mt-8 text-white text-center">

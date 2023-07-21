@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -6,16 +6,18 @@ import { Link } from "react-router-dom";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { TopbrandsElectroniques } from "./lacalDatabase";
 function ElectronicBrand() {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    accessibility: true,
-    arrows: true,
-  };
+const [current,setCurrent] = useState(0) 
+useEffect(() => {
+  const interval = setInterval(
+    () =>
+      setCurrent((prev) =>
+        prev === TopbrandsElectroniques.length - 1 ? 0 : prev + 1
+      ),
+    2000
+  );
+  return () => clearInterval(interval);
+}, []);
+  
   return (
     <div className="w-4/5 m-auto">
       <div className="flex items-center justify-between pb-4">
@@ -30,17 +32,13 @@ function ElectronicBrand() {
         <div className="border_blue border-b-2 border-blue-500 " />
       </div>
       {/* <div className="grid sm:grid-cols-1 md:grid-cols-7 gap-4 border__top  "> */}
-      <Slider settings={settings}>
-        {TopbrandsElectroniques.map((x) => (
-          <div className="brand-slider-image py-8" key={x._id}>
+      <div className="brand-slider-image py-8" >
             <img
               className="brand-image rounded w-full"
-              src={x.image}
+              src={TopbrandsElectroniques[current].image}
               alt="electronique"
             />
           </div>
-        ))}
-      </Slider>
     </div>
     // </div>
   );

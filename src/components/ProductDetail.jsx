@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { useParams } from "react-router-dom";
 import { phones } from "./lacalDatabase";
+import { Link } from "react-router-dom"
 function ProductDetail() {
   const { id } = useParams();
   const product = phones.find((x) => x._id === id);
@@ -30,9 +31,13 @@ function ProductDetail() {
               <strong>Count In Stock:</strong> {product.stock}
             </h1>
           </div>
-          <div className="">
-            <h1>Review</h1>
-          </div>
+          <Link to="/shipping">
+            <div className="">
+              <button className="bg-[#008ECC] p-2 my-8 rounded text-white">
+                Buy Now
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
